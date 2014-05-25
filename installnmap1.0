@@ -1,0 +1,7 @@
+#!/binbash
+#Download and configure nmap from source
+echo This will install nmap-6.46 "S"
+wget http://nmap.org/dist/nmap-6.46.tar.bz2
+bzip2 -cd nmap-6.46.tar.bz2 | tar xvf -
+cd nmap-6.46
+./configure
